@@ -25,8 +25,8 @@ import Footer from "../footer/Footer";
 import DoctorQueryForm from "./DoctorQueryForm";
 import ChatBot from "./ChatBot";
 import ReviewSection from "../service/ReviewSection";
-import ReviewLogin from "../service/ReviewLogin";
-import ClintDetails from "../doctors/ClintDetails";
+// import ReviewLogin from "../service/ReviewLogin";
+// import ClintDetails from "../doctors/ClintDetails";
 import ClientDashboard from "../doctors/ClintDetails";
 
 function Home() {
@@ -52,15 +52,15 @@ function Home() {
 
           <div className="">
            <div className="absolute top-72">
-           {/* <ClintDetails/> */}
+        
            <ClientDashboard
             client={{
-              name: "Dr. Alex Johnson",
+              name: "Dr. Anuj Saini",
               email: "alex.johnson@example.com",
-              phone: "+1 234 567 890",
+              // phone: "+1 234 567 890",
               specialization: "Orthopedic Physiotherapy",
               experience: 10,
-              address: "New York, USA"
+              address: "Lucknow UP"
             }} 
            />
            </div>
@@ -102,9 +102,9 @@ function Home() {
                 personalized exercises, manual therapy, and rehabilitation
                 techniques.
               </p>
-              <div className="mt-16 rounded-md p-2 w-32 text-center  bg-green-600">
+              {/* <div className="mt-16 rounded-md p-2 w-32 text-center  bg-green-600">
                 <button>All Service</button>
-              </div>
+              </div> */}
             </div>
           </section>
 

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Service from "../service/ClientLogin";
 import logo from "../../assets/anuj.jpg";
 import { MdHealthAndSafety, MdWhatsapp } from "react-icons/md";
-// import UserProfile from "../doctors/UserProfile";
+
 import {
   Dialog,
   DialogPanel,
