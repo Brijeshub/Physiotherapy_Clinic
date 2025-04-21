@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { auth } from "../../firebaseConfig";
-import { signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut } from "firebase/auth";
+import {
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  signOut,
+} from "firebase/auth";
 
 const ReviewLogin = ({ onLogin }) => {
   const [email, setEmail] = useState("");
@@ -31,7 +35,7 @@ const ReviewLogin = ({ onLogin }) => {
   return (
     <div className="flex flex-col items-center">
       {/*  Open Login Form */}
-      <button 
+      <button
         onClick={() => setIsOpen(true)}
         className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
       >
@@ -71,15 +75,17 @@ const ReviewLogin = ({ onLogin }) => {
             </form>
 
             {/*  Toggle Between Login & Signup */}
-            <p 
-              onClick={() => setIsSignUp(!isSignUp)} 
+            <p
+              onClick={() => setIsSignUp(!isSignUp)}
               className="text-blue-500 text-center mt-3 cursor-pointer hover:underline"
             >
-              {isSignUp ? "Already have an account? Login" : "Don't have an account? Sign Up"}
+              {isSignUp
+                ? "Already have an account? Login"
+                : "Don't have an account? Sign Up"}
             </p>
 
             {/*  Close Modal Button */}
-            <button 
+            <button
               onClick={() => setIsOpen(false)}
               className="mt-4 w-full text-gray-600 hover:text-black transition"
             >
@@ -90,8 +96,8 @@ const ReviewLogin = ({ onLogin }) => {
       )}
 
       {/*  Logout Button */}
-      <button 
-        onClick={handleLogout} 
+      <button
+        onClick={handleLogout}
         className="mt-4 text-red-500 hover:text-red-600 transition"
       >
         Logout
@@ -101,3 +107,4 @@ const ReviewLogin = ({ onLogin }) => {
 };
 
 export default ReviewLogin;
+

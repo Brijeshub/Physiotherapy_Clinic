@@ -102,9 +102,6 @@ function Home() {
                 personalized exercises, manual therapy, and rehabilitation
                 techniques.
               </p>
-              {/* <div className="mt-16 rounded-md p-2 w-32 text-center  bg-green-600">
-                <button>All Service</button>
-              </div> */}
             </div>
           </section>
 
